@@ -2,6 +2,10 @@
 
 /* Logo */
 
+header {
+    height : 100px;
+}
+
 #logo {
     margin-top: 10px;
     margin-left: 10px;
@@ -34,11 +38,22 @@ ul li a {
 }
 
 ul li a:hover {
-    color : blue;
-    border-top : 1px solid blue;
+    color : #0065FC;
+    border-top : 1px solid #0065FC;
+}
+
+
+/* Texte et polices */
+
+h1 {
+    font-size : large;
+    color : black;
+
 }
 
 p {
-    display:block;
-    float: right;
+    font-size : medium;
+    color: black;
 }
+
+/*Section 1 Rechercher */
