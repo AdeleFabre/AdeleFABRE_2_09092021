@@ -25,10 +25,15 @@ header {
     margin-top: 10px;
 }
 
-#recherche {
-    margin : 20px 0px 20px 0px ;
+#searchtool {
+    display: flex;
+    justify-content : flex-start;
 }
 
+#recherche {
+    margin : 20px 0px 20px 0px ;
+    justify-content : space-around;
+}
 
 #barrederecherche {
     border : 1px solid #F2F2F2;
