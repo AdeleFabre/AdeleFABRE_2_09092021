@@ -26,12 +26,34 @@ header {
 }
 
 #recherche {
-    margin : 20px 0 20px 0 ;
+    margin : 20px 0px 20px 0px ;
 }
 
+
 #barrederecherche {
-    border : 1 px solid lightgrey;
+    border : 1px solid #F2F2F2;
+    width : 20%;
+    padding: 8px;
 }
+
+#rechercher {
+    background-color : #0065FC;
+    border-radius : 0px 10px 10px 0px;
+    color : white;
+    border : 1px solid #0065FC;
+    font-weight : bold; 
+    padding : 8px;
+
+}
+
+label {
+    font-family: 'FontAwesome', serif;
+    background-color: #F2F2F2;
+    border-radius : 10px 0px 0px 10px;
+    border: 1px solid #F2F2F2;
+    padding : 8px;
+}
+
 
 
 ul {
