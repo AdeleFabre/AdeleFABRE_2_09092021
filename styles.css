@@ -17,6 +17,38 @@ header {
     float : left;
 }
 
+/* Menu */
+ul {
+    list-style-type: none;
+    margin: 10px 150px 0px 0px;
+    padding: 10px;
+    float: right;
+}
+
+li {
+    margin-left: 5px;
+    float: right;
+}
+
+ul li a {
+    display: block;
+    width: 100px;
+    border : 1px solid white;
+    background-color : white ;
+    padding: 25px 10px 10px 10px;
+    text-align: center;
+    text-decoration: none;
+    color : black;
+    float: right;
+}
+
+ul li a:hover {
+    color : #0065FC;
+    border-top : 1px solid #0065FC;
+}
+
+/* SECTION 1 - Panneau de recherche */
+
 #section1_recherche {
     margin: 50px;
 }
@@ -62,35 +94,51 @@ label {
 }
 
 
+/* Filtres */
 
-ul {
-    list-style-type: none;
-    margin: 10px 150px 0px 0px;
+button {
+    font-size : small; 
+    font-weight : bold; 
+    background-color: white;
+    border : 2px solid #F2F2F2;
+    border-radius : 20px;
+    padding : 10px 15px 10px 15px;
+    margin-right : 20px;
+}
+
+button:hover {
+    background-color : #0065FC;
+    color : white;
+    border : 1px solid  #0065FC;
+}
+
+.icone_filtre {
+    font-family: 'FontAwesome', sans-serif;
+    font-size : large;
+    color: #0065FC;
+    background-color: #DEEBFF;
+    width : 20px;
     padding: 10px;
-    float: right;
+    margin : 0px;
+    border-radius : 20px;
 }
 
-li {
-    margin-left: 5px;
-    float: right;
+#filtres {
+    font-size : small;
+    font-weight : bold; 
+    background-color: white;
+    padding : 10px 15px 10px 15px;
+    margin-right : 20px;
 }
 
-ul li a {
-    display: block;
-    width: 100px;
-    border : 1px solid white;
-    background-color : white ;
-    padding: 25px 10px 10px 10px;
-    text-align: center;
-    text-decoration: none;
-    color : black;
-    float: right;
+#container_filters {
+    display : flex;
+    flex-direction : row;
+    justify-content : flex-start;
+    align-content : flex-center;
 }
 
-ul li a:hover {
-    color : #0065FC;
-    border-top : 1px solid #0065FC;
-}
+
 
 
 /* Texte et polices */
