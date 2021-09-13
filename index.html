@@ -41,26 +41,21 @@
         <!-- Section 1 Recherche -->
         <section id="section1_recherche">
 
+            <!-- Message d'accueil + barre de recherche -->
             <div id="bienvenue">
                 <div>
                     <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
                     <p>En plein centre-ville ou en pleine nature</p>
                 </div>
-                
-
-                <!-- Barre de recherche -->
-                <div id="recherche">
-                    <form method="post" action="bdd.php">
-                        <div id="searchtool">
-                            <label for="barrederecherche">︁</label>
-                            <input type="search" name= "barrederecherche" id="barrederecherche" placeholder="Marseille, France"/>
-                            <input type="button" value="Rechercher" id="rechercher" />
-                        </div>
-                    </form>
-                </div>    
+            
+                <form method="post" action="bdd.php" id="conteneur_barrederecherche"> <!-- barre de recherche -->
+                    <label for="barrederecherche">︁</label>
+                    <input type="search" name= "barrederecherche" id="barrederecherche" placeholder="Marseille, France"/>
+                    <input type="button" value="Rechercher" id="rechercher" />
+                </form>    
             </div>
 
-            <div id="container_filters">
+            <div id="conteneur_filtres"> <!-- Filtres -->
 
                 <div>
                     <p id="filtres">Filtres</p>
@@ -85,7 +80,7 @@
             </div>
 
             <div id="info">
-
+                <p><span class="icone"></span>Plus de 500 logements sont disponibles dans cette ville</p>
             </div>
 
         </section>
@@ -94,6 +89,14 @@
 
         <!-- Section 2 Résultats -->
         <section id="section2_resultats">
+
+            <div id="conteneur_resultats">
+
+            </div>
+
+            <aside>
+                
+            </aside>
 
         </section>
 

@@ -75,7 +75,7 @@ ul li a:hover {
     border : none;
 }
 
-/* SECTION 1 - Panneau de recherche */
+/* SECTION 1 */
 
 #section1_recherche {
     padding : 20px;
@@ -85,14 +85,10 @@ ul li a:hover {
     margin-top: 10px;
 }
 
-#searchtool {
+#conteneur_barrederecherche {
+    margin : 20px 0px 20px 0px ;
     display: flex;
     justify-content : flex-start;
-}
-
-#recherche {
-    margin : 20px 0px 20px 0px ;
-    justify-content : space-around;
 }
 
 #barrederecherche {
@@ -124,6 +120,18 @@ label {
 
 /* Filtres */
 
+#conteneur_filtres {
+    display : flex;
+    justify-content : flex-start;
+    align-items : center;
+    flex-direction : row wrap;
+}
+
+#filtres {
+    font-weight : bold;
+    padding-right : 20px;
+}
+
 button {
     font-size : small; 
     font-weight : bold; 
@@ -151,28 +159,26 @@ button:hover {
     border-radius : 20px;
 }
 
-#filtres {
-    font-size : small;
-    font-weight : bold; 
-    background-color: white;
-    padding : 10px 15px 10px 15px;
-    margin-right : 20px;
+#info{
+    padding : 20px 0px 20px 0px;
+}
+.icone {
+    display : inline-block;
+    width : 15px;
+    height : 15px;
+    padding : 5px;
+    margin-right : 10px;
+    text-align : center;
+    font-family : 'FontAwesome';
+    color: #0065FC;
+    border : 1px solid #f2f2f2;
+    border-radius : 15px;
+
 }
 
-#container_filters {
-    display : flex;
-    flex-direction : row;
-    justify-content : flex-start;
-    align-content : flex-center;
-}
-
-
-
-
-/* Texte et polices */
 
 
 
 
 
-/*Section 1 Rechercher */
+/*SECTION 2*/
