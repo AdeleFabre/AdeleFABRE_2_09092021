@@ -1,33 +1,55 @@
-/* HEADER */
-* {
-    font-family : 'Raleway', sans-serif;
-    color : black;
+/* Page */
+
+body {
+    font-family: Raleway, sans-serif;
+    color : black; 
 }
 
-/* Logo */
+#bloc_page {
+    margin : auto;
+    height : 900px;
+}
+
+h1 {
+    font-size : large;
+    padding-bottom: 7px;
+    margin: 0px;
+}
+
+h2 {
+    font-size : medium;
+    padding: 0px;
+    margin: 0px;
+}
+
+p {
+    font-size : small;
+    padding: 0px;
+    margin: 0px;
+}
+
+nav {
+    font-size: small;
+}
+
+/* ENTETE */
 
 header {
-    height : 80px;
-    margin : 50px;
-}
-
-#logo {
-    
-    
-    float : left;
+    padding : 20px;
+    display : flex;
+    justify-content : space-between;
+    align-items : flex-end;
 }
 
 /* Menu */
-ul {
+nav ul {
     list-style-type: none;
-    margin: 10px 150px 0px 0px;
-    padding: 10px;
-    float: right;
+    display : flex;
+    justify-content : space-between;
 }
 
 li {
     margin-left: 5px;
-    float: right;
 }
 
 ul li a {
@@ -39,7 +61,6 @@ ul li a {
     text-align: center;
     text-decoration: none;
     color : black;
-    float: right;
 }
 
 ul li a:hover {
@@ -47,10 +68,17 @@ ul li a:hover {
     border-top : 1px solid #0065FC;
 }
 
+.inscription {
+    color : #0065FC;
+    font-weight: bold;
+    text-decoration : none;
+    border : none;
+}
+
 /* SECTION 1 - Panneau de recherche */
 
 #section1_recherche {
-    margin: 50px;
+    padding : 20px;
 }
 
 #search {
@@ -143,26 +171,8 @@ button:hover {
 
 /* Texte et polices */
 
-h1 {
-    font-size : large;
-    padding-bottom: 7px;
-    margin: 0px;
-}
 
-h2 {
-    font-size : medium;
-    padding: 0px;
-    margin: 0px;
-}
 
-p {
-    font-size : small;
-    padding: 0px;
-    margin: 0px;
-}
 
-nav {
-    font-size: small;
-}
 
 /*Section 1 Rechercher */

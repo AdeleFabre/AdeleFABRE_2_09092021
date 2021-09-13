@@ -10,13 +10,15 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,800;1,700&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/ba5422f0b6.js" crossorigin="anonymous"></script>
-    <title>Document</title>
+    <title>Reservia</title>
 </head>
 
 <body>
 
-    <!-- Entête + Menu -->
-    <header>
+    <div id="bloc_page">
+
+        <!-- Entête + Menu -->
+        <header>
 
             <!-- Logo -->
             <div id="logo">
@@ -26,92 +28,93 @@
             <!-- Menu -->
             <nav>
                 <ul>
-                    <li><a href="#section3_activites" class="menu">Activités</a></li>
-                    <li><a href="#section2_resultats" class="menu">Hébergements</a></li>
+                    <li><a href="#section3_activites" class="menu">Hébergements</a></li>
+                    <li><a href="#section2_resultats" class="menu">Activités</a></li>
+                    <li><a href="#" class="inscription">S'inscrire</a></li>
                 </ul>
             </nav>
-
-            <!-- Inscription -->
-        
-    </header>
-
-
-
-    <!-- Section 1 Recherche -->
-    <section id="section1_recherche">
-
-        <div id="search">
-            <!-- Accueil -->
-            <div>
-                <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
-                <p>En plein centre-ville ou en pleine nature</p>
-            </div>
             
+        </header>
 
-            <!-- Outil de recherche -->
-            <div id="recherche">
-                <form method="post" action="bdd.php">
-                    <div id="searchtool">
-                        <label for="barrederecherche">︁</label>
-                        <input type="search" name= "barrederecherche" id="barrederecherche" placeholder="Marseille, France"/>
-                        <input type="button" value="Rechercher" id="rechercher" />
-                    </div>
-                </form>
-            </div>    
-        </div>
 
-        <div id="container_filters">
 
-            <div>
-                <p id="filtres">Filtres</p>
+        <!-- Section 1 Recherche -->
+        <section id="section1_recherche">
+
+            <div id="search">
+                <!-- Accueil -->
+                <div>
+                    <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
+                    <p>En plein centre-ville ou en pleine nature</p>
+                </div>
+                
+
+                <!-- Outil de recherche -->
+                <div id="recherche">
+                    <form method="post" action="bdd.php">
+                        <div id="searchtool">
+                            <label for="barrederecherche">︁</label>
+                            <input type="search" name= "barrederecherche" id="barrederecherche" placeholder="Marseille, France"/>
+                            <input type="button" value="Rechercher" id="rechercher" />
+                        </div>
+                    </form>
+                </div>    
             </div>
 
-            <div>
-                <button><span class="icone_filtre">︁</span>Economique</button>
-            </div>    
+            <div id="container_filters">
 
-            <div>
-                <button><span class="icone_filtre">︁</span>Familial</button>
+                <div>
+                    <p id="filtres">Filtres</p>
+                </div>
+
+                <div>
+                    <button><span class="icone_filtre">︁</span>Economique</button>
+                </div>    
+
+                <div>
+                    <button><span class="icone_filtre">︁</span>Familial</button>
+                </div>
+
+                <div>
+                    <button><span class="icone_filtre">♥︁</span>Romantique</button>
+                </div>
+
+                <div>
+                    <button><span class="icone_filtre">🐕︁</span>Animaux autorisés</button>
+                </div>
+
             </div>
 
-            <div>
-                <button><span class="icone_filtre">♥︁</span>Romantique</button>
+            <div id="info">
+
             </div>
 
-            <div>
-                <button><span class="icone_filtre">🐕︁</span>Animaux autorisés</button>
-            </div>
-
-        </div>
-
-        <div id="info">
-
-        </div>
-
-    </section>
+        </section>
 
 
 
-    <!-- Section 2 Résultats -->
-    <section id="section2_resultats">
+        <!-- Section 2 Résultats -->
+        <section id="section2_resultats">
 
-    </section>
-
-
-
-    <!-- Section 3 Activités -->
-    <section id="section3_activites">
-
-    </section>
+        </section>
 
 
 
-    <!-- Pied de page -->
-    <footer>
+        <!-- Section 3 Activités -->
+        <section id="section3_activites">
 
-    </footer>
+        </section>
 
 
+
+        <!-- Pied de page -->
+        <footer>
+
+        </footer>
+
+
+    </div>
 
 </body>
+
 </html>
