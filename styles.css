@@ -7,16 +7,22 @@ body {
 
 #bloc_page {
     margin : auto;
+    padding : 30px;
     height : 900px;
 }
 
 h1 {
-    font-size : large;
+    font-size : x-large;
     padding-bottom: 7px;
     margin: 0px;
 }
 
 h2 {
+    font-size : medium;
+    padding: 0px;
+    margin: 0px;
+}
+h3 {
     font-size : medium;
     padding: 0px;
     margin: 0px;
@@ -176,9 +182,90 @@ button:hover {
 
 }
 
+/* SECTION 2 */
 
+#section2_resultats {
+    display : flex;
+    justify-content : space-around;
+}
 
+#conteneur_resultats, aside {
+    padding : 40px;
+    margin : 20px;
+    height : auto;
+    background-color: #F2F2F2;
+    border-radius : 20px;
+}
 
+#conteneur_resultats {
+    width : 65%;
+    display : flex;
+    flex-direction : column;
+    justify-content: space-between;
+}
 
+aside {
+    width : 25%;
+}
 
-/*SECTION 2*/
+/* Hébergements */
+
+.conteneur_cartes {
+    padding-top : 20px;
+    padding-bottom : 20px;
+    display : flex;
+    flex-flow : row wrap;
+    justify-content : space-between;
+}
+.carte_hotel {
+    padding : 5px;
+    margin-bottom : 20px;
+    width : 250px;
+    height : 200px;
+    background-color: white;
+    border-radius : 20px;
+    display : block;
+    box-shadow: 5px 5px 20px lightgrey;
+}
+
+.photo_hotel {
+    max-width : 250px;
+    max-height : 120px;
+    width : 100%;
+    height : auto;
+    border-radius : 15px 15px 0px 0px;
+    margin-top : 0px;
+    vertical-align: top;
+}
+
+.description_hotel p, h3 {
+    text-align: left;
+    border-radius : 0px 0px 5px 5px; 
+    vertical-align : bottom;
+    padding : 1px;
+    margin : 6px 0px 0px 5px;
+}
+
+.nom_hotel, .prix {
+    font-weight : bold;
+}
+
+.bluestar {
+    font-family: 'FontAwesome';
+    color: #0065FC;
+}
+
+.greystar {
+    font-family: 'FontAwesome';
+    color: #f2f2f2;
+}
+
+.more {
+    color : black;
+    font-weight : bold;
+    text-decoration : none;
+    font-size : large;
+    align-self: flex-start;
+    align-items: flex-end;
+
+/* Les plus populaires */
