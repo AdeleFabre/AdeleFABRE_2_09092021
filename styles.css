@@ -18,7 +18,7 @@ h1 {
 }
 
 h2 {
-    font-size : medium;
+    font-size : large;
     padding: 0px;
     margin: 0px;
 }
@@ -267,5 +267,50 @@ aside {
     font-size : large;
     align-self: flex-start;
     align-items: flex-end;
+}
 
 /* Les plus populaires */
+
+#conteneur_carteshotelpop {
+    padding-top : 20px;
+    padding-bottom : 20px;
+    display : flex;
+    flex-flow : column;
+    justify-content : space-between;
+}
+
+.carte_hotelpop {
+    padding : 5px;
+    margin : 10px 0px 10px 0px;
+    width : auto;
+    height : 150px;
+    background-color: white;
+    border-radius : 20px;
+    box-shadow: 5px 5px 20px lightgrey;
+    display : flex;
+    flex-direction: row;
+}
+
+.photo_hotelpop {
+    max-width : 130px;
+    max-height : 150px;
+    width : auto;
+    height : 100%;
+    border-radius : 15px 0px 0px 15px;
+    margin-top : 0px;
+}
+
+.description_hotelpop {
+    text-align: left;
+    border-radius : 0px 5px 5px 0px; 
+    padding : 2px;
+    margin : 6px 0px 0px 5px;
+}
+
+.description_hotelpop p, h3 {
+    text-align: left;
+    border-radius : 0px 0px 5px 5px; 
+    vertical-align : bottom;
+    padding : 1px;
+    margin : 6px 0px 0px 5px;
+}
