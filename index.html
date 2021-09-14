@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,800;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/ba5422f0b6.js" crossorigin="anonymous"></script>
     <title>Reservia</title>
 </head>
@@ -17,20 +17,18 @@
 
     <div id="bloc_page">
 
-        <!-- Entête + Menu -->
+        <!-- HEADER + MENU -->
         <header>
 
-            <!-- Logo -->
             <div id="logo">
                 <img src="images/logo/Reservia.svg" alt="logo"/>
             </div>
 
-            <!-- Menu -->
             <nav>
                 <ul>
-                    <li><a href="#section2_resultats" class="menu">Hébergements</a></li>
-                    <li><a href="#section3_activites" class="menu">Activités</a></li>
-                    <li><a href="#" class="inscription">S'inscrire</a></li>
+                    <li><a href="#section2_resultats" class="menu"><h3>Hébergements</h3></a></li>
+                    <li><a href="#section3_activites" class="menu"><h3>Activités</h3></a></li>
+                    <li><a href="#" class="inscription"><h3>S'inscrire</h3></a></li>
                 </ul>
             </nav>
             
@@ -38,7 +36,7 @@
 
 
 
-        <!-- Section 1 Recherche -->
+        <!-- ACCUEIL -->
         <section id="section1_recherche">
 
             <!-- Message d'accueil + barre de recherche -->
@@ -58,7 +56,7 @@
             <div id="conteneur_filtres"> <!-- Filtres -->
 
                 <div>
-                    <p id="filtres">Filtres</p>
+                    <h3 id="filtres">Filtres</h3>
                 </div>
 
                 <div>
@@ -87,7 +85,7 @@
 
 
 
-        <!-- Section 2 Résultats -->
+        <!-- Section 2 HEBERGEMENTS -->
         <section id="section2_resultats">
 
             <div id="conteneur_resultats"> <!-- Hébergements -->
@@ -96,10 +94,18 @@
                 </div>
 
                 <div class="conteneur_cartes">
+
+                    <a href="#" class="hotel">
+
+
+
+                    </a>
+
+
                     <div class="carte_hotel"> <!--La Cannebière-->
                         <img src="images/hebergements/4_small/Auberge la Cannebière.jpg" alt="Auberge La Cannebière" class="photo_hotel">
                         <div class="description_hotel">
-                            <h3>Auberge la Cannebière</h3>
+                            <h4>Auberge la Cannebière</h4>
                             <p>Nuit à partir de <span class="prix">25€</span></p>
                             <p><span class="bluestar"></span><span class="greystar"></span></p>
                         </div>
@@ -108,7 +114,7 @@
                     <div class="carte_hotel"> <!--Hôtel du port-->
                         <img src="images/hebergements/4_small/Hotel du port.jpg" alt="Hôtel du port" class="photo_hotel">
                         <div class="description_hotel">
-                            <h3>Hôtel du port</h3>
+                            <h4>Hôtel du port</h4>
                             <p>Nuit à partir de <span class="prix">52€</span></p>
                             <p><span class="bluestar"></span></p>
                         </div>
@@ -117,7 +123,7 @@
                     <div class="carte_hotel"> <!--Hôtel Les Mouettes-->
                         <img src="images/hebergements/4_small/Hotel Les Mouettes.jpg" alt="Hôtel Les Mouettes" class="photo_hotel">
                         <div class="description_hotel">
-                            <h3>Hôtel Les Mouettes</h3>
+                            <h4>Hôtel Les Mouettes</h4>
                             <p>Nuit à partir de <span class="prix">76€</span></p>
                             <p><span class="bluestar"></span><span class="greystar"></span></p>
                         </div>
@@ -126,7 +132,7 @@
                     <div class="carte_hotel"> <!--Hôtel de la mer-->
                         <img src="images/hebergements/4_small/Hotel de la mer.jpg" alt="Hôtel de la mer" class="photo_hotel">
                         <div class="description_hotel">
-                            <h3>Hôtel de la mer</h3>
+                            <h4>Hôtel de la mer</h4>
                             <p>Nuit à partir de <span class="prix">46€</span></p>
                             <p><span class="bluestar"></span><span class="greystar"></span></p>
                         </div>
@@ -135,7 +141,7 @@
                     <div class="carte_hotel"> <!--Le Panier-->
                         <img src="images/hebergements/4_small/Auberge Le Panier.jpg" alt="Auberge Le Panier" class="photo_hotel">
                         <div class="description_hotel">
-                            <h3>Auberge Le Panier</h3>
+                            <h4>Auberge Le Panier</h4>
                             <p>Nuit à partir de <span class="prix">23€</span></p>
                             <p><span class="bluestar"></span><span class="greystar"></span></p>
                         </div>
@@ -144,7 +150,7 @@
                     <div class="carte_hotel"> <!--Hôtel Chez Amina-->
                         <img src="images/hebergements/4_small/Hotel Chez Amina.jpg" alt="Hôtel Chez Amina" class="photo_hotel">
                         <div class="description_hotel">
-                            <h3>Hôtel Chez Amina</h3>
+                            <h4>Hôtel Chez Amina</h4>
                             <p>Nuit à partir de <span class="prix">96€</span></p>
                             <p><span class="bluestar"></span></p>
                         </div>
@@ -152,7 +158,7 @@
 
                 </div>
                 
-                <a href="#" class="more">Afficher plus</a>
+                <a href="#" class="more"><h3>Afficher plus</h3></a>
 
             </div>
 
@@ -166,7 +172,7 @@
                     <div class="carte_hotelpop"> <!--Le Soleil du Matin-->
                         <img src="images/hebergements/4_small/Hotel Le Soleil du Matin.jpg" alt="Hôtel Le Soleil du Matin" class="photo_hotelpop">
                         <div class="description_hotelpop">
-                            <h3>Hôtel Le Soleil du Matin</h3>
+                            <h4>Hôtel Le Soleil du Matin</h4>
                             <p>Nuit à partir de <span class="prix">128€</span></p>
                             <br/>
                             <br/>
@@ -177,7 +183,7 @@
                     <div class="carte_hotelpop"> <!--Au coeur de l'eau-->
                         <img src="images/hebergements/4_small/Au coeur de l'eau.jpg" alt="Au coeur de l'eau" class="photo_hotelpop">
                         <div class="description_hotelpop">
-                            <h3>Au coeur de l'eau Chambres d'hôtes</h3>
+                            <h4>Au coeur de l'eau Chambres d'hôtes</h4>
                             <p>Nuit à partir de <span class="prix">71€</span></p>
                             <br/>
                             <br/>
@@ -188,7 +194,7 @@
                     <div class="carte_hotelpop"> <!--Hôtel tout bleu et blanc-->
                         <img src="images/hebergements/4_small/Tout bleu et blanc.jpg" alt="Hôtel tout bleu et blanc" class="photo_hotelpop">
                         <div class="description_hotelpop">
-                            <h3>Hôtel tout Bleu et Blanc</h3>
+                            <h4>Hôtel tout Bleu et Blanc</h4>
                             <p>Nuit à partir de <span class="prix">68€</span></p>
                             <br/>
                             <br/>
@@ -200,7 +206,6 @@
         </section>
 
 
-
         <!-- Section 3 Activités -->
         <section id="section3_activites">
 
@@ -209,15 +214,15 @@
             <div id="conteneur_activites">
 
                 <a href="#" class="activite1">
-                    <p class="activite">Vieux Port</p>
+                    <h4 class="activite">Vieux Port</h4>
                 </a>
 
                 <a href="#" class="activite2">
-                    <p class="activite">Fort de Pomègues</p>
+                    <h4 class="activite">Fort de Pomègues</h4>
                 </a>
 
                 <a href="#" class="activite3">
-                    <p class="activite">Îles du Frioul</p>
+                    <h4 class="activite">Îles du Frioul</h4>
                 </a>
 
             </div>
