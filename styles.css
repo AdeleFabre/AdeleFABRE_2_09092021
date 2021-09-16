@@ -14,20 +14,20 @@ body {
 h1, h2 {
     font-size : 1.4em;
     font-weight: bolder;
-    padding : 0px 0px 7px 0px;
+    padding : 0px 0px 0px 0px;
     margin: 0px;
 }
 
 h3 {
     font-size : 1.1em;
-    padding: 5px;
+    padding: 0px;
     margin: 0px;
 }
 
 h4 {
     font-size : 1em;
     font-weight : bolder;
-    padding: 5px;
+    padding: 0px;
     margin: 0px;
 }
 
@@ -221,6 +221,39 @@ aside {
     display : flex;
     flex-flow : row wrap;
     justify-content : space-between;
+}
+
+.hotel {
+    margin : 10px;
+    width : 250px;
+    height : 200px; 
+    background-color: white;
+    border : 5px solid white;
+    border-radius: 20px;
+    position: relative;
+    box-shadow: 5px 5px 20px lightgrey;
+}
+
+.imghotel {
+    width : 100%;
+    height : 70%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.hotel_description {
+    width : 98%;
+    height : 35%;
+    padding : 5px;
+    border-radius: 0px 0px 15px 15px;
+    background-color: white;
+    position: absolute;
+    bottom : 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+    
 }
 
 .carte_hotel {
