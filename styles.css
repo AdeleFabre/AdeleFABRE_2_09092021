@@ -2,10 +2,19 @@
 {
     /* ------------------------- ENTETE ------------------------------------- */
 
+    header {
+        padding : 20px;
+    }
+    
     nav {
         display: flex;
         justify-content: end;
         align-items: center;
+    }
+
+    nav a {
+        padding : 30px 40px 30px 40px;
+        border-top : 2px solid white;
     }
 
     .logo {
@@ -173,15 +182,6 @@ a {
 }
 
 /* ENTETE */
-
-header {
-    padding : 20px;
-}
-
-nav a {
-    padding : 30px 40px 30px 40px;
-    border-top : 2px solid white;
-}
 
 .inscription {
     color : #0065FC;
@@ -562,6 +562,10 @@ footer {
     
     /*--------------- ENTETE ------------------- */
 
+    header {
+        padding-top : 20px;
+    }
+    
     nav {
         display: grid !important;
         grid-template-columns: 50% 50%;
@@ -571,34 +575,53 @@ footer {
     .logo {
         grid-column : 1;
         grid-row: 1;
+        position: relative;
+        left : 40px;
+        
+    }
+
+    .inscription {
+        grid-column : 2;
+        grid-row: 1;
+        text-align: right;
+        position: relative;
+        right : 40px;
+        top : 20px;
     }
 
     .menuheb {
         grid-column : 1;
         grid-row: 2;
-        border-bottom: 2px solid #F2F2F2;
-        margin : auto;
     }
 
     .menuact {
         grid-column : 2;
         grid-row: 2;
-        border-bottom: 2px solid #F2F2F2;
-        margin : auto;
+    }
+
+    .menuheb, .menuact {
+        border-bottom: 3px solid #F2F2F2; 
+        padding-bottom: 15px;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        position: relative;
+        top: 10px;
     }
 
     .menuact:hover, .menuheb:hover {
         border-bottom: 2px solid #0065FC;
     }
 
-    .inscription {
-        grid-column : 2;
-        grid-row: 1;
-        margin : auto;
-    }
+   
 
     /* -------------- Section 1 - Recherche & filtres --------------- */
 
+    #section1 {
+        padding-left : 40px;
+        padding-top : 30px;
+    }
+    
     #barrederecherche {
         width : 60%;
     }
