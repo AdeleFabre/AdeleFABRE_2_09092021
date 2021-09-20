@@ -19,6 +19,10 @@
         border-top: 2px solid #0065FC;
     }
 
+    #section1 {
+        margin : 0px 30px 0px 30px;
+    }
+
     #barrederecherche {
         width : 200px;
     }
@@ -36,6 +40,11 @@
         margin : 20px;
         height : auto;
     }
+
+    #conteneur_hotelpop {
+        padding-top : 20px;
+        padding-bottom : 20px;
+    }
     
     /* --------- Hébergements (VD) ------------ */
 
@@ -50,6 +59,9 @@
         flex-flow : row wrap;
         justify-content : space-between; 
     }
+
+
+
 
     /* ---------- Les plus populaires (VD) ---------- */
 
@@ -85,6 +97,10 @@
         width : 70%;
         margin-left : 30px;
         justify-content: flex-start;
+    }
+
+    .apropos p, .noshebergements p, .assistance p {
+        width : 450px;
     }
 
 }
@@ -178,7 +194,6 @@ nav a {
 
 #section1 {
     padding : 20px;
-    margin : 0px 30px 0px 30px;
 }
 
 #bienvenue {
@@ -292,7 +307,7 @@ input {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding : 20px 0px 10px 20px;
+    padding : 20px 20px 0px 20px;
 }
 
 .fa-chart-line {
@@ -300,7 +315,7 @@ input {
     border: none;
     color : black;
     margin: 0px;
-    padding: 0px;
+    padding: 0px 20px 0px 0px;
     font-size: large;
 }
 
@@ -312,7 +327,7 @@ input {
 
 .hotel {
     margin : 15px;
-    width : 260px;
+    width : 30%;
     height : 200px; 
     background-color: white;
     border : 5px solid white;
@@ -373,8 +388,6 @@ input {
 /* ---------- Les plus populaires ----------*/
 
 #conteneur_hotelpop {
-    padding-top : 20px;
-    padding-bottom : 20px;
     display : flex;
     flex-flow : column;
     justify-content : space-between;
@@ -383,8 +396,8 @@ input {
 
 .hotelpop {
     margin : 10px;
-    width : 350px;
-    height : 150px; 
+    height: 150px;
+    width : 95%;
     background-color: white;
     border : 5px solid white;
     border-radius: 20px;
@@ -465,27 +478,33 @@ input {
 }
 
 .vieuxport {
-    background : url(images/activites/4_small/Vieux\ Port.jpg) center;
+    background : url(images/activites/4_small/Vieux\ Port.jpg) center no-repeat;
+    background-size: cover; 
 }
 
 .pomegues {
-    background: url(images/activites/4_small/Fort\ de\ Pomèges.jpg) center;
+    background: url(images/activites/4_small/Fort\ de\ Pomèges.jpg) center no-repeat;
+    background-size: cover;
 }
 
 .frioul {
-    background: url(images/activites/4_small/Iles\ du\ Frioul.jpg) center;
+    background: url(images/activites/4_small/Iles\ du\ Frioul.jpg) center no-repeat;
+    background-size: cover; 
 }
 
 .calanques {
-    background : url(images/activites/4_small/Calanques.jpg) center;
+    background : url(images/activites/4_small/Calanques.jpg) center no-repeat;
+    background-size: cover; 
 }
 
 .bonnemere {
-    background : url(images/activites/4_small/Bonne\ Mère.jpg) center;
+    background : url(images/activites/4_small/Bonne\ Mère.jpg) center no-repeat;
+    background-size: cover; 
 }
 
 .longchamp {
-    background : url(images/activites/4_small/Longchamp.jpg) center; 
+    background : url(images/activites/4_small/Longchamp.jpg) center no-repeat;
+    background-size: cover; 
 }
 
 /* ------------- Flexbox ----------------- */
@@ -515,9 +534,9 @@ footer {
 }
 
 .apropos p, .noshebergements p, .assistance p {
-    width : 450px;
     padding : 15px 0px 0px 0px;
 }
+
 .apropos h3, .noshebergements h3, .assistance h3 {
     padding : 15px 0px 15px 0px;
 }
@@ -558,12 +577,14 @@ footer {
         grid-column : 1;
         grid-row: 2;
         border-bottom: 2px solid #F2F2F2;
+        margin : auto;
     }
 
     .menuact {
         grid-column : 2;
         grid-row: 2;
         border-bottom: 2px solid #F2F2F2;
+        margin : auto;
     }
 
     .menuact:hover, .menuheb:hover {
@@ -573,6 +594,7 @@ footer {
     .inscription {
         grid-column : 2;
         grid-row: 1;
+        margin : auto;
     }
 
     /* -------------- Section 1 - Recherche & filtres --------------- */
@@ -587,8 +609,13 @@ footer {
         flex-flow : column-reverse;
     }
 
+    .topconteneur {
+        padding : 30px 20px 20px 20px;
+    }
+
     #conteneur_hebergements {
         width : 100%;
+        padding : 0px 20px 0px 20px;
     }
 
     .conteneur_hotels {
@@ -596,14 +623,24 @@ footer {
         align-items : center;
     }
 
+    .hotel {
+        width : 95%;
+        height : 220px;
+    }
+
     aside {
         width : 100%;
         background-color: #F2F2F2;
         margin : 0px;
-        padding : 0px 20px 0px 20px;
+        padding : 0px 20px 40px 20px;
     }
     
     /* ----------------- Section 3 - Activités ---------------------- */
+
+    #section3 {
+        width : 100%;
+        padding : 0px 20px 40px 20px;
+    }
 
     #conteneur_activites {
         flex-direction: column;
@@ -613,10 +650,21 @@ footer {
     .act_bloc {
         display: flex;
         flex-direction: column;
+        width : 100%;
     }    
+
+    .activiteL, .activiteM, .activiteS {
+        width : 95%;
+        height : 200px;
+        margin : 15px;
+    }
 
     /* ---------------------- Footer --------------------------- */
 
+    footer {
+        padding : 0px 20px 0px 20px;
+    }
+    
     #foot {
         width: 100%;
         padding-left : 20px;
