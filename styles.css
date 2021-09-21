@@ -69,9 +69,6 @@
         justify-content : space-between; 
     }
 
-
-
-
     /* ---------- Les plus populaires (VD) ---------- */
 
     aside {
@@ -113,17 +110,6 @@
     }
 
 }
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -322,12 +308,45 @@ input {
 /*---------- Hébergements ----------*/
 
 .conteneur_hotels {
-    display : flex;
+    display : grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 20px;
+    padding : 0px 20px 0px 15px;
+}
+
+.cannebiere {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.port {
+    grid-column: 2;
+    grid-row: 1;
+}
+
+.mouettes {
+    grid-column: 3;
+    grid-row: 1;
+}
+
+.mer {
+    grid-column: 1;
+    grid-row: 2;
+}
+
+.panier {
+    grid-column: 2;
+    grid-row: 2;
+}
+
+.amina {
+    grid-column: 3;
+    grid-row: 2;
 }
 
 .hotel {
-    margin : 15px;
-    width : 30%;
+    width : 100%;
     height : 200px; 
     background-color: white;
     border : 5px solid white;
@@ -344,7 +363,7 @@ input {
 }
 
 .hotel_description {
-    width : 100%;
+    width : 101%;
     height : auto;
     padding : 5px;
     border-radius: 0px 0px 15px 15px;
@@ -382,7 +401,7 @@ input {
     font-size : large;
     align-self: flex-start;
     align-items: flex-end;
-    padding : 20px 0px 10px 20px;
+    padding : 10px 0px 10px 20px;
 }
 
 /* ---------- Les plus populaires ----------*/
@@ -613,8 +632,6 @@ footer {
         border-bottom: 2px solid #0065FC;
     }
 
-   
-
     /* -------------- Section 1 - Recherche & filtres --------------- */
 
     #section1 {
@@ -642,8 +659,10 @@ footer {
     }
 
     .conteneur_hotels {
+        display: flex;
         flex-flow : column;
         align-items : center;
+        padding-bottom : 20px;
     }
 
     .hotel {
@@ -666,6 +685,7 @@ footer {
     }
 
     #conteneur_activites {
+        display : flex;
         flex-direction: column;
         align-items: center;
     }
