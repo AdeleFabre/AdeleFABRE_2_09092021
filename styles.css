@@ -120,6 +120,7 @@ body {
     font-family: Raleway, sans-serif;
     color : black; 
     margin : 0px;
+    background-color: white;
 }
 
 h1 {
@@ -175,7 +176,7 @@ nav {
 
 nav a {
     padding : 30px 40px 30px 40px;
-    border-top : 2px solid white;
+    border-top : 2px solid transparent;
 }
 
 .menu:hover {
