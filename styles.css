@@ -20,6 +20,10 @@
         display: none;
     }
 
+    .filtres--solo {
+        display: none;
+    }
+
     /* ------------------------------ SECTION 2 : HEBERGEMENTS (VD) -------------------------------- */
 
     #section2 {
@@ -110,13 +114,6 @@
 
 
 
-
-
-
-
-
-
-
 /* ------ Eléments généraux ------ */ 
 
 body {
@@ -198,7 +195,7 @@ nav a {
 /* --------- Barre de recherche ------- */
 
 #section1 {
-    padding : 20px;
+    padding : 20px 20px 0px 20px;
 }
 
 #bienvenue {
@@ -227,10 +224,6 @@ nav a {
     font-size: 1.1em;
 }
 
-.barredereche__btn-rechercher {
-    
-}
-
 label {
     font-family: 'FontAwesome', serif;
     background-color: #F2F2F2;
@@ -245,27 +238,33 @@ input {
 
 /* ------------- Filtres --------------- */
 
-.filtre {
+.filtres {
     display: flex;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: start;
     flex-wrap: wrap;
 }
 
-.filtre a {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+.filtres h3 {
+    padding-right : 20px;
+}
+
+.filtres--solo {
+    font-size : 1.1em;
+    font-weight: bolder;
+    padding : 10px 0px 10px 0px;
+}
+
+.filtre {
     border : 2px solid #f2f2f2;
     border-radius: 20px 20px 20px 20px;
     height : 41px;
-    margin-left : 20px;
     padding-right : 20px;
     font-weight: bolder;
-    margin : 8px;
+    margin : 8px 15px 8px 0px;
 }
 
-.filtre a:hover {
+.filtres a:hover {
     background-color: #0065FC;
     color : white;
 }
@@ -286,7 +285,7 @@ input {
 }
 
 #info{
-    padding : 15px 0px 15px 0px;
+    padding : 15px 0px 0px 0px;
     display : flex;
     align-items: center;
 }
@@ -652,6 +651,7 @@ footer {
 
     .menuact:hover, .menuheb:hover {
         border-bottom: 2px solid #0065FC;
+        border-top : none;
     }
 
     /* -------------- Section 1 - Recherche & filtres --------------- */
@@ -659,6 +659,7 @@ footer {
     #section1 {
         padding-left : 40px;
         padding-top : 30px;
+        padding-bottom: 20px;
     }
     
     .barrederecherche__champ {
@@ -666,6 +667,10 @@ footer {
     }
 
     .barredereche__btn-rechercher {
+        display: none;
+    }
+
+    .filtres h3 {
         display: none;
     }
 
@@ -784,7 +789,11 @@ footer {
     }
 
     #section1 {
-        margin : 0px 20px 0px 20px;
+        margin : 0px 20px 20px 20px;
+    }
+
+    .filtres h3 {
+        display: none;
     }
 
     /* -------------- Section 2 - Hébergements ---------------- */
