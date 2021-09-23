@@ -42,10 +42,11 @@
                     <p>En plein centre-ville ou en pleine nature</p>
                 </div>
             
-                <form method="post" action="bdd.php" id="conteneur_barrederecherche"> <!-- barre de recherche -->
+                <form method="post" action="bdd.php" class="barrederecherche"> <!-- barre de recherche -->
                     <label for="barrederecherche">︁</label>
-                    <input type="search" name= "barrederecherche" id="barrederecherche" placeholder="Marseille, France"/>
-                    <input type="button" value="Rechercher" id="rechercher" />
+                    <input type="search" name= "barrederecherche" class="barrederecherche__champ" placeholder="Marseille, France"/>
+                    <button class="barredereche__btn barredereche__btn-rechercher"><p>Rechercher</p></button>
+                    <button class="barredereche__btn barredereche__btn-loupe"><i class="fas fa-search"></i></button>
                 </form>    
             </div>
 

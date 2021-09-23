@@ -8,12 +8,16 @@
         padding : 40px 40px 40px 50px;
     }
 
-    #barrederecherche {
+    .barrederecherche__champ {
         width : 200px;
     }
 
     #section1 {
         margin : 0px 30px 0px 30px;
+    }
+
+    .barredereche__btn-loupe {
+        display: none;
     }
 
     /* ------------------------------ SECTION 2 : HEBERGEMENTS (VD) -------------------------------- */
@@ -181,7 +185,7 @@ nav a {
     border-top: 2px solid #0065FC;
 }
 
-#barrederecherche {
+.barrederecherche__champ {
     width : 200px;
 }
 
@@ -201,25 +205,30 @@ nav a {
     margin-top: 10px;
 }
 
-#conteneur_barrederecherche {
+.barrederecherche {
     margin : 20px 0px 20px 0px ;
     display: flex;
     justify-content : flex-start;
 }
 
-#barrederecherche {
+.barrederecherche__champ {
     border : 1px solid #F2F2F2;
     padding: 10px;
     color : black !important;
     font-weight: bold !important;
 }
 
-#rechercher {
+.barredereche__btn {
     background-color : #0065FC;
     border-radius : 0px 10px 10px 0px;
     color : white;
     border : 1px solid #0065FC;
     padding : 10px;
+    font-size: 1.1em;
+}
+
+.barredereche__btn-rechercher {
+    
 }
 
 label {
@@ -652,8 +661,12 @@ footer {
         padding-top : 30px;
     }
     
-    #barrederecherche {
+    .barrederecherche__champ {
         width : 80%;
+    }
+
+    .barredereche__btn-rechercher {
+        display: none;
     }
 
     /* -------------- Section 2 - Hébergements ---------------- */
@@ -762,8 +775,12 @@ footer {
 
     
     
-    #barrederecherche {
+    .barrederecherche__champ {
         width : 300px;
+    }
+
+    .barredereche__btn-rechercher {
+        display: none;
     }
 
     #section1 {
