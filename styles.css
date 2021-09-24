@@ -74,13 +74,56 @@
     }
 
     #conteneur_activites {
+        padding : 20px;
+        width: 100%;
+        min-height : 200px;
         display : grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
         gap: 40px;
-        width: 100%;
-        height : 400px;
-        padding : 20px 20px 20px 20px;
     } 
+
+    .activiteL {
+        min-height : 400px;
+    }
+    
+    .activiteM {
+        min-height : 200px;
+    }
+    
+    .activiteS {
+        min-height : 180px; 
+    }
+
+    .vieuxport {
+        grid-column: 1;
+        grid-row: 1/3;
+    }
+    
+    .pomegues {
+        grid-column: 2;
+        grid-row: 1;
+    }
+    
+    .frioul {
+        grid-column: 2;
+        grid-row: 2;
+    }
+    
+    .calanques {
+        grid-column: 3;
+        grid-row: 1/3;
+    }
+    
+    .bonnemere {
+        grid-column: 4;
+        grid-row: 1;
+    }
+    
+    .longchamp {
+        grid-column: 4;
+        grid-row: 2;
+    }
 
     #conteneur_activites a:hover {
         transform: scale(1.01);
@@ -370,7 +413,7 @@ input {
 
 .hotel {
     width : 100%;
-    height : 200px; 
+    height : 220px; 
     background-color: white;
     border : 5px solid white;
     border-radius: 20px;
@@ -486,7 +529,7 @@ input {
 
 .activiteL {
     width : 100%;
-    height : 100%;
+    
     border-radius: 20px;
     box-shadow: 5px 5px 20px lightgrey;
     position : relative;
@@ -495,7 +538,7 @@ input {
 
 .activiteM {
     width : 100%;
-    height : 50%;
+    
     border-radius: 20px;
     box-shadow: 5px 5px 20px lightgrey;
     position: relative;
@@ -504,7 +547,7 @@ input {
 
 .activiteS {
     width : 100%;
-    height : 40%; 
+    
     border-radius: 20px;
     box-shadow: 5px 5px 20px lightgrey;
     position : relative;
@@ -514,12 +557,6 @@ input {
 .vieuxport {
     background : url(images/activites/4_small/Vieux\ Port.jpg) center no-repeat;
     background-size: cover; 
-}
-
-.bloc1 {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
 }
 
 .pomegues {
@@ -537,12 +574,6 @@ input {
     background-size: cover; 
 }
 
-.bloc2 {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
 .bonnemere {
     background : url(images/activites/4_small/Bonne\ Mère.jpg) center no-repeat;
     background-size: cover;
@@ -551,21 +582,6 @@ input {
 .longchamp {
     background : url(images/activites/4_small/Longchamp.jpg) center no-repeat;
     background-size: cover;
-}
-
-/* ------------- Flexbox ----------------- */
-
-.act_bloc {
-    display: flex;
-}
-
-.ssbloc1 {
-    display: flex;
-}
-
-.ssbloc2 {
-    display: flex;
-    flex-direction: column;
 }
 
 /* ------------------------------------ FOOTER --------------------------------------------*/
@@ -717,19 +733,15 @@ footer {
     }
 
     #conteneur_activites {
-        display : flex;
-        flex-direction: column;
-        align-items: center;
+        width : 100%;
+        display : grid;
+        gap: 20px;
     }   
 
     .activiteL, .activiteM, .activiteS {
         width : 95%;
-        height : 200px;
-        margin : 15px;
-    }
-
-    .bloc1, .bloc2 {
-        width : 100%;
+        min-height : 200px;
+        margin : 5px 10px 5px 10px;
     }
 
     /* ---------------------- Footer --------------------------- */
@@ -868,11 +880,12 @@ footer {
     }
 
     #conteneur_activites {
+        width : 100%;
         display : grid;
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: 32% 67%;
-        gap : 20px;
-    } 
+        grid-template-rows: 1fr 1fr 1fr;
+        gap: 20px;
+    }
 
     .activiteL, .activiteM, .activiteS {
         width : 100%;
@@ -884,22 +897,33 @@ footer {
         grid-column: 1;
         grid-row: 1;
     }
-
-    .bloc1 {
-        grid-column: 1;
-        grid-row: 2;
-        justify-content: space-between;
-    }
-
-    .calanques {
+    
+    .pomegues {
         grid-column: 2;
         grid-row: 1;
     }
-
-    .bloc2 {
+    
+    .frioul {
+        grid-column: 1;
+        grid-row: 2;
+    }
+    
+    .calanques {
         grid-column: 2;
         grid-row: 2;
     }
+    
+    .bonnemere {
+        grid-column: 1;
+        grid-row: 3;
+    }
+    
+    .longchamp {
+        grid-column: 2;
+        grid-row: 3;
+    }
+
+
 
     /* ---------------------- Footer --------------------------- */
 
