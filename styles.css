@@ -1,163 +1,8 @@
-@media all and (min-width: 992px) /* Version Desktop */
-{
-    /* ------------------------- ENTETE + SECTION 1 ------------------------------------- */
-
-    .logo {
-        position: absolute;
-        left : 0px;
-        padding : 40px 40px 40px 50px;
-    }
-
-    .barrederecherche__champ {
-        width : 200px;
-    }
-
-    #section1 {
-        margin : 0px 30px 0px 30px;
-    }
-
-    .barredereche__btn-loupe {
-        display: none;
-    }
-
-    .filtres--solo {
-        display: none;
-    }
-
-    /* ------------------------------ SECTION 2 : HEBERGEMENTS (VD) -------------------------------- */
-
-    #section2 {
-        margin : 0px 30px 0px 30px;
-    }
-
-    #conteneur_hebergements, aside {
-        background-color: #F2F2F2;
-        border-radius : 20px;
-        padding : 20px;
-        margin : 20px;
-        height : auto;
-    }
-
-    #conteneur_hotelpop {
-        padding-top : 20px;
-        padding-bottom : 20px;
-    }
-    
-    /* --------- Hébergements (VD) ------------ */
-
-    #conteneur_hebergements {
-        width : 65%;
-        display : flex;
-        flex-direction : column;
-        justify-content: space-between;
-    }
-
-    .conteneur_hotels {
-        flex-flow : row wrap;
-        justify-content : space-between; 
-    }
-
-    .conteneur_hotels a:hover, #conteneur_hotelpop a:hover {
-        transform: scale(1.01);
-    }
-
-    /* ---------- Les plus populaires (VD) ---------- */
-
-    aside {
-        width : 30%;
-    }
-
-    /* ------------------------------- SECTION 3 : ACTIVITES (VD) ------------------------- */
-
-    #section3 {
-        margin : 0px 30px 0px 30px;
-    }
-
-    #conteneur_activites {
-        padding : 20px;
-        width: 100%;
-        min-height : 200px;
-        display : grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
-        gap: 40px;
-    } 
-
-    .activiteL {
-        min-height : 400px;
-    }
-    
-    .activiteM {
-        min-height : 200px;
-    }
-    
-    .activiteS {
-        min-height : 180px; 
-    }
-
-    .vieuxport {
-        grid-column: 1;
-        grid-row: 1/3;
-    }
-    
-    .pomegues {
-        grid-column: 2;
-        grid-row: 1;
-    }
-    
-    .frioul {
-        grid-column: 2;
-        grid-row: 2;
-    }
-    
-    .calanques {
-        grid-column: 3;
-        grid-row: 1/3;
-    }
-    
-    .bonnemere {
-        grid-column: 4;
-        grid-row: 1;
-    }
-    
-    .longchamp {
-        grid-column: 4;
-        grid-row: 2;
-    }
-
-    #conteneur_activites a:hover {
-        transform: scale(1.01);
-    }
-
-
-    /* FOOTER */
-
-    footer {
-        height : 200px;
-        padding : 20px;
-        margin-top: 40px;
-    }
-
-    #foot {
-        display : flex;
-        width : 80%;
-        margin-left : 30px;
-        justify-content: start;
-    }
-
-    .apropos, .noshebergements, .assistance {
-        width : 100%;
-        text-align: left;
-    }
-
-}
-
-
-
-
-
-
 /* ------ Eléments généraux ------ */ 
+
+* {
+    box-sizing: border-box;
+}
 
 body {
     font-family: Raleway, sans-serif;
@@ -201,11 +46,8 @@ a {
 }
 
 
-* {
-    box-sizing: border-box;
-}
 
-/* ENTETE */
+/* ----------- HEADER ------------- */
 
 header {
     padding : 20px;
@@ -606,11 +448,153 @@ footer {
 
 
 
+@media all and (min-width: 992px) /* Version Desktop */
+{
+    /* ------------------------- HEADER + SECTION 1 ------------------------------------- */
 
+    .logo {
+        position: absolute;
+        left : 0px;
+        padding : 40px 40px 40px 50px;
+    }
 
+    .barrederecherche__champ {
+        width : 200px;
+    }
 
+    #section1 {
+        margin : 0px 30px 0px 30px;
+    }
 
+    .barredereche__btn-loupe {
+        display: none;
+    }
 
+    .filtres--solo {
+        display: none;
+    }
+
+    /* ------------------------------ SECTION 2 : HEBERGEMENTS -------------------------------- */
+
+    #section2 {
+        margin : 0px 30px 0px 30px;
+    }
+
+    #conteneur_hebergements, aside {
+        background-color: #F2F2F2;
+        border-radius : 20px;
+        padding : 20px;
+        margin : 20px;
+        height : auto;
+    }
+
+    aside {
+        width : 30%;
+    }
+
+    #conteneur_hotelpop {
+        padding-top : 20px;
+        padding-bottom : 20px;
+    }
+
+    #conteneur_hebergements {
+        width : 65%;
+        display : flex;
+        flex-direction : column;
+        justify-content: space-between;
+    }
+
+    .conteneur_hotels {
+        flex-flow : row wrap;
+        justify-content : space-between; 
+    }
+
+    .conteneur_hotels a:hover, #conteneur_hotelpop a:hover {
+        transform: scale(1.01);
+    }
+
+    /* ------------------------------- SECTION 3 : ACTIVITES ------------------------- */
+
+    #section3 {
+        margin : 0px 30px 0px 30px;
+    }
+
+    #conteneur_activites {
+        padding : 20px;
+        width: 100%;
+        min-height : 200px;
+        display : grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 40px;
+    } 
+
+    .activiteL {
+        min-height : 400px;
+    }
+    
+    .activiteM {
+        min-height : 200px;
+    }
+    
+    .activiteS {
+        min-height : 180px; 
+    }
+
+    .vieuxport {
+        grid-column: 1;
+        grid-row: 1/3;
+    }
+    
+    .pomegues {
+        grid-column: 2;
+        grid-row: 1;
+    }
+    
+    .frioul {
+        grid-column: 2;
+        grid-row: 2;
+    }
+    
+    .calanques {
+        grid-column: 3;
+        grid-row: 1/3;
+    }
+    
+    .bonnemere {
+        grid-column: 4;
+        grid-row: 1;
+    }
+    
+    .longchamp {
+        grid-column: 4;
+        grid-row: 2;
+    }
+
+    #conteneur_activites a:hover {
+        transform: scale(1.01);
+    }
+
+    /* -------------------------- FOOTER ------------------------------ */
+
+    footer {
+        height : 200px;
+        padding : 20px;
+        margin-top: 40px;
+    }
+
+    #foot {
+        display : flex;
+        width : 80%;
+        margin-left : 30px;
+        justify-content: start;
+    }
+
+    .apropos, .noshebergements, .assistance {
+        width : 100%;
+        text-align: left;
+    }
+}
 
 
 
@@ -618,7 +602,7 @@ footer {
 @media screen and (min-width: 0px) and (max-width: 768px) /*Responsive smartphone*/
 {
     
-    /*--------------- ENTETE ------------------- */
+    /*--------------- HEADER ------------------- */
 
     header {
         padding : 20px 0px 0px 0px;
@@ -671,7 +655,7 @@ footer {
         border-top : none;
     }
 
-    /* -------------- Section 1 - Recherche & filtres --------------- */
+    /* -------------- SECTION 1 --------------- */
 
     #section1 {
         padding-left : 40px;
@@ -691,7 +675,7 @@ footer {
         display: none;
     }
 
-    /* -------------- Section 2 - Hébergements ---------------- */
+    /* -------------- SECTION 2 ---------------- */
 
     #section2 {
         flex-flow : column-reverse;
@@ -725,7 +709,7 @@ footer {
         padding : 0px 20px 40px 20px;
     }
     
-    /* ----------------- Section 3 - Activités ---------------------- */
+    /* ----------------- SECTION 3 ---------------------- */
 
     #section3 {
         width : 100%;
@@ -744,7 +728,7 @@ footer {
         margin : 5px 10px 5px 10px;
     }
 
-    /* ---------------------- Footer --------------------------- */
+    /* ---------------------- FOOTER --------------------------- */
 
     footer {
         padding : 0px 20px 40px 20px;
@@ -765,23 +749,10 @@ footer {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 @media all and (min-width: 768px) and (max-width: 991px) /*Responsive tablette*/
 {
 
-    /* -------------- Entête --------------- */
+    /* -------------- HEADER --------------- */
     
     nav {
         justify-content: space-between;
@@ -792,7 +763,7 @@ footer {
         padding : 0px 20px 0px 20px;
     }
 
-    /* -------------- Section 1 - Recherche & filtres --------------- */
+    /* -------------- SECTION 1 --------------- */
 
     
     
@@ -812,7 +783,7 @@ footer {
         display: none;
     }
 
-    /* -------------- Section 2 - Hébergements ---------------- */
+    /* -------------- SECTION 2 ---------------- */
     
     #section2 {
         flex-flow : column-reverse;
@@ -847,9 +818,6 @@ footer {
         padding : 0px 20px 40px 20px;
     }
 
-
-    /* -------------- Section 2 - Les plus populaires ---------------- */
-
     #conteneur_hotelpop {
         display : flex;
         flex-flow : row nowrap;
@@ -869,7 +837,7 @@ footer {
         align-items: center;
     }
 
-    /* ----------------- Section 3 - Activités ---------------------- */
+    /* ----------------- SECTION 3 ---------------------- */
 
     #section3 {
         padding : 0px 30px 20px 30px;
@@ -923,9 +891,7 @@ footer {
         grid-row: 3;
     }
 
-
-
-    /* ---------------------- Footer --------------------------- */
+    /* ---------------------- FOOTER --------------------------- */
 
     footer {
         padding : 30px;
